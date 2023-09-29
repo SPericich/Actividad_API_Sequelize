@@ -1,0 +1,100 @@
+### Obtención de todos los productos
+GET http://localhost:1234/productos
+
+### Obtención de un producto específico
+GET http://localhost:1234/productos/1/
+
+### Agregado de un producto nuevo
+POST http://localhost:1234/productos
+Content-Type: application/json
+
+{
+    "nombre": "Mixer multiuso ACME",
+    "tipo": "Electrodoméstico de cocina",
+    "precio": 150.15
+}
+
+### Modificación de un dato de un producto
+PATCH http://localhost:1234/productos/10
+Content-Type: application/json
+
+{
+    "nombre": "Mixer multiuso ACME PODEROSO"
+}
+
+### Borrado de un producto
+DELETE http://localhost:1234/productos/7
+
+
+###Actualizar un producto por id
+PUT http://localhost:1234/productos/1
+Content-Type: application/json
+
+{
+    "nombre": "Balanza electrónica",
+    "tipo": "Electrodoméstico de cocina",
+    "precio": 120.50
+}
+
+
+### 1. OBTENCIÓN DE TODOS LOS USUARIOS
+GET http://localhost:1234/usuarios/
+
+### 2. OBTENCIÓN DE UN USUARIO EN ESPECÍFICO
+GET http://localhost:1234/usuarios/4
+
+### 3. AGREGAR UN NUEVO USUARIO
+POST http://localhost:1234/usuarios
+Content-Type: application/json
+
+{
+    "dni": "20165498",
+    "nombres": "Jimena",
+    "apellidos": "Hernández",
+    "email": "jimenitahot@gmail.com",
+    "telefono": "+1 923-952-3578"
+}
+
+### 4. MODIFICAR UN DATO DE UN USUARIO
+PATCH http://localhost:1234/usuarios/11
+Content-Type: application/json
+
+{
+    "nombres": "Jimena Sofia"
+}
+
+### 5. BORRAR UN USUARIO
+DELETE http://localhost:1234/usuarios/8
+
+### 6. OBTENCIÓN DEL PRECIO DE UN PRODUCTO
+GET http://localhost:1234/productos/precio/3
+
+### 7. OBTENCIÓN DEL NOMBRE DE UN PRODUCTO
+GET http://localhost:1234/productos/nombre/2
+
+### 8. OBTENCIÓN DEL TELÉFONO DE UN USUARIO
+GET http://localhost:1234/usuarios/telefono/7
+
+### 9. OBTENCIÓN DEL NOMBRE DE UN USUARIO
+GET http://localhost:1234/usuarios/nombre/9
+
+### 10. CANTIDAD TOTAL DE PRODUCTOS Y SUMATORIA DE SUS PRECIOS
+GET http://localhost:1234/productos/estadistica
+
+###Actualizar un usuario
+PUT http://localhost:1234/usuarios/2
+Content-Type: application/json
+
+{
+    "dni": "32659874",
+    "nombres": "Pamela",
+    "apellidos": "López",
+    "email": "pampam@gmail.com",
+    "telefono": "+1 427-345-3578"
+}
+
+
+
+
+
+
